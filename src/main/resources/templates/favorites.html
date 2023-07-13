@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/base.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/navigation.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/catalog.css">
+    <link href="../static/toast/toast.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="icon" type="image/ico" th:href="@{../static/favicon.ico}">
+    <title>EazyGames - Избранное</title>
+</head>
+<body>
+<div id="content">
+    <div id="content-body">
+        <div id="main">
+            <div id="main-navigation">
+                <a th:href="@{/eazy-games}"><img id="main-navigation__logo" src="../static/image/logo.png"
+                                                 alt="EazyGames"/></a>
+                <div class="main-navigation-block">
+                    <div class="main-navigation-block__title">Жанры</div>
+                    <div><a th:href="@{/eazy-games/category?category=Гонки}">Гонки</a></div>
+                    <div><a th:href="@{/eazy-games/category?category=Казуальные}">Казуальные игры</a></div>
+                    <div><a th:href="@{/eazy-games/category?category=Приключения}">Приключения</a></div>
+                    <div><a th:href="@{/eazy-games/category?category=RPG}">Ролевые игры</a></div>
+                    <div><a th:href="@{/eazy-games/category?category=Симуляторы}">Симуляторы</a></div>
+                    <div><a th:href="@{/eazy-games/category?category=Стратегии}">Стратегии</a></div>
+                    <div><a th:href="@{/eazy-games/category?category=Экшн}">Экшн</a></div>
+                </div>
+                <div class="main-navigation-block">
+                    <div class="main-navigation-block__title">Категории</div>
+                    <div><a th:href="@{/eazy-games/category?category=Лидеры продаж}">Лидеры продаж</a></div>
+                    <div><a th:href="@{/eazy-games/category?category=Новинки}">Новинки</a></div>
+                    <div><a th:href="@{/eazy-games/category?category=Предзаказ}">Предзаказ</a></div>
+                </div>
+            </div>
+            <div id="main-page">
+                <div id="main-page-header">
+                    <div id="main-page-header__search_field">
+                        <input type="search" id="main-page-header__search_field__input" placeholder="Поиск..."
+                               autocomplete="off"/>
+                    </div>
+                    <div class="main-page-header__link">
+                        <div><a th:href="@{/eazy-games/catalog}"><img src="../static/image/catalog.png" alt=""/></a>
+                        </div>
+                        <a th:href="@{/eazy-games/catalog}">Каталог</a>
+                    </div>
+                    <div class="main-page-header__link">
+                        <div><a th:href="@{/eazy-games/favorites}"><img src="../static/image/favorites.png" alt=""/></a>
+                        </div>
+                        <a th:href="@{/eazy-games/favorites}">Избранное</a>
+                    </div>
+                    <div id="main-page-header__btn_basket">
+                        <div><a th:href="@{/eazy-games/basket}"><img src="../static/image/shoppingcart.png"
+                                                                     alt="Корзина"/></a>
+                        </div>
+                        <a id="main-page-header__link_basket" th:href="@{/eazy-games/basket}">Корзина<span
+                                id="main-page-header__link_basket__badge"
+                                class="main-page-header__link_basket__badge">0</span></a>
+                    </div>
+                </div>
+                <div id="main-page__title" style="margin-bottom: calc(var(--index) * 0.52);">Избранное</div>
+                <div id="main-page-catalog" class="main-page-catalog">
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="footer-contacts">
+                <a href="https://vk.com/leragalaburda" target="_blank"><img class="footer-contacts-contact"
+                                                                            src="../static/image/vk.png"/></a>
+                <a href="https://www.linkedin.com/in/%D0%B2%D0%B0%D0%BB%D0%B5%D1%80%D0%B8%D1%8F-%D0%B3%D0%B0%D0%BB%D0%B0%D0%B1%D1%83%D1%80%D0%B4%D0%B0-bb717821a/"
+                   target="_blank"><img class="footer-contacts-contact" src="../static/image/linkedin.png"/></a>
+                <a href="https://instagram.com/_lera.galaburda_?igshid=ZDdkNTZiNTM=" target="_blank"><img
+                        class="footer-contacts-contact" src="../static/image/instagram.png"/></a>
+                <a href="https://t.me/LeraGalaburda" target="_blank"><img class="footer-contacts-contact"
+                                                                          src="../static/image/telegram.png"/></a>
+            </div>
+            <div class="footer-copyright">©2023 EAZYGAMES</div>
+            <div class="footer-copyright">Все права защищены. Полное или частичное копирование материалов сайта без
+                согласования с администрацией запрещено!
+            </div>
+            <div class="footer-copyright">Все названия игр, компаний, торговых марок, логотипы и игровые материалы
+                являются
+                собственностью соответствующих владельцев.
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../static/toast/toast.js"></script>
+<script src="../static/js/functions.js"></script>
+<script src="../static/js/searchScript.js"></script>
+<script src="../static/js/basketBadgeScript.js"></script>
+<script src="../static/js/favoritesPageScript.js"></script>
+</html>

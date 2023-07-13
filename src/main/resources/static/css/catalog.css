@@ -1,0 +1,151 @@
+/*Заголовок страницы*/
+#main-page__title {
+    margin-top: calc(var(--index) * 0.52);
+    font-family: Montserrat-SemiBold, serif;
+    font-size: calc(var(--index) * 0.9);
+    color: #FFFFFF;
+}
+
+/*Подзаголовок страницы*/
+.main-page__subtitle {
+    text-decoration: none;
+}
+
+.main-page__subtitle div {
+    margin-top: calc(var(--index) * 0.35);
+    margin-bottom: calc(var(--index) * 0.87);
+    font-family: Montserrat-SemiBold, serif;
+    font-size: calc(var(--index) * 0.68);
+    color: #939393;
+}
+
+/**Каталог**/
+.main-page-catalog {
+    position: relative;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+.main-page-catalog__3item {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: left;
+    vertical-align: top;
+    width: 29.5%;
+    margin-right: 3%;
+    font-family: Montserrat-SemiBold, serif;
+    font-size: calc(var(--index) * 0.6);
+    color: #FFFFFF;
+}
+
+.main-page-catalog__3item__btn-basket, .main-page-catalog__4item__btn_basket {
+    float: right;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    background-color: #AD59EF;
+    border: 0;
+    font-family: Montserrat-Medium, serif;
+    color: #FFFFFF;
+    padding: 3% 3.5% 3% 3.5%;
+    font-size: calc(var(--index) * 0.6);
+    border-radius: calc(var(--index) * 0.45);
+    white-space: nowrap;
+}
+
+.main-page-catalog__3item__btn-basket:hover, .main-page-catalog__4item__btn_basket:hover {
+    box-shadow: 0 0 10px #AD59EF;
+    cursor: pointer;
+}
+
+.main-page-catalog__3item__btn_favorite, .main-page-catalog__4item__btn_favorite {
+    position: absolute;
+    left: calc(var(--index) * 8.65);
+    top: calc(var(--index) * 0.3);
+    background-color: transparent;
+    border: none;
+    height: calc(var(--index) * 1.2);
+    width: calc(var(--index) * 1.2);
+    background-image: url("../image/favorite.png");
+    background-size: cover;
+}
+
+.main-page-catalog__3item__btn_favorite:hover, .main-page-catalog__3item__btn_not_favorite:hover, .main-page-catalog__4item__btn_not_favorite:hover, .main-page-catalog__4item__btn_favorite:hover {
+    cursor: pointer;
+}
+
+.main-page-catalog__3item__btn_favorite:active, .main-page-catalog__3item__btn_not_favorite:active, .main-page-catalog__4item__btn_not_favorite:active, .main-page-catalog__4item__btn_favorite:active {
+    background-image: url("../image/favorite.png");
+}
+
+.main-page-catalog__3item__btn_not_favorite, .main-page-catalog__4item__btn_not_favorite {
+    position: absolute;
+    left: calc(var(--index) * 8.65);
+    top: calc(var(--index) * 0.3);
+    background-color: transparent;
+    border: none;
+    height: calc(var(--index) * 1.2);
+    width: calc(var(--index) * 1.2);
+    background-image: url("../image/addtofavorites.png");
+    background-size: cover;
+}
+
+.main-page-catalog__4item {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: left;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 5%;
+    font-family: Montserrat-SemiBold, serif;
+    font-size: calc(var(--index) * 0.6);
+    color: #FFFFFF;
+}
+
+.main-page-catalog__4item__btn_basket {
+    width: 100%;
+}
+
+.main-page-catalog__4item__btn_not_favorite, .main-page-catalog__4item__btn_favorite {
+    left: 80%;
+    top: 4%;
+}
+
+.main-page-catalog__item__img {
+    border-radius: 12px;
+    height: 100%;
+    width: 100%;
+}
+
+.main-page-catalog__item__title {
+    text-decoration: none;
+}
+
+.main-page-catalog__item__title div {
+    font-family: Montserrat-SemiBold, serif;
+    font-size: calc(var(--index) * 0.6);
+    color: #FFFFFF;
+    margin: 4% 0 3% 0;
+    text-align: justify;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    line-clamp: 1;
+}
+
+.main-page-catalog__item__subtitle {
+    text-decoration: none;
+    font-family: Montserrat-Regular, serif;
+    font-size: calc(var(--index) * 0.45);
+    color: #939393;
+    text-align: justify;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+}

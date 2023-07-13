@@ -1,0 +1,31 @@
+#main-page__main_item {
+    margin: calc(var(--index) * 0.52) calc(var(--index) * 0.26) 0 0;
+    border-radius: calc(var(--index) * 0.45);
+    position: relative;
+}
+
+#main-page__main_item a img {
+    border-radius: calc(var(--index) * 0.45);
+    height: 100%;
+    width: 100%;
+}
+
+#main-page__main_item button {
+    position: absolute;
+    display: block;
+    margin: calc(var(--index) * -2.4) 0 0 calc(var(--index) * 26.6);
+    background-color: #AD59EF;
+    border: 0;
+    font-family: Montserrat-Medium, serif;
+    color: #FFFFFF;
+    padding: calc(var(--index) * 0.26) calc(var(--index) * 0.39) calc(var(--index) * 0.26) calc(var(--index) * 0.39);
+    font-size: calc(var(--index) * 0.6);
+    border-radius: calc(var(--index) * 0.45);
+    box-shadow: 0 0 calc(var(--index) * 0.38) #AD59EF;
+    white-space: nowrap;
+}
+
+#main-page__main_item button:hover {
+    box-shadow: 0 0 calc(var(--index) * 0.75) #AD59EF;
+    cursor: pointer;
+}

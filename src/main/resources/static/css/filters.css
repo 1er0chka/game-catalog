@@ -1,0 +1,143 @@
+/**Сортировки-фильтры**/
+.main-page-sort_filters {
+    display: flex;
+    color: #939393;
+    font-family: Montserrat-Regular, serif;
+    font-size: calc(var(--index) * 0.6);
+    margin-right: 5%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+#main-page-sort__number {
+    margin-right: 5%;
+}
+
+/*Список видов сортировки*/
+#main-page-sort__select {
+    margin-left: 1%;
+    font-size: calc(var(--index) * 0.5);
+    font-family: Montserrat-Regular, serif;
+    background: transparent;
+    color: #939393;
+}
+
+#main-page-sort__select::-ms-expand {
+    display: none;
+}
+
+#main-page-sort__select:hover {
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+}
+
+#main-page-sort__select:focus {
+    border-color: #FFFFFF;
+    background: #0c0517;
+    color: #ffffff;
+    outline: none;
+}
+
+/*Кнопка открытия фильтров*/
+#main-page-sort__filters {
+    margin-left: auto;
+}
+
+#main-page-sort__filters:hover {
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/*Фильтры*/
+.main-page-filters-filter {
+    color: #FFFFFF;
+    font-size: calc(var(--index) * 0.5);
+    font-family: Montserrat-Medium, serif;
+}
+
+.main-page-filters__block {
+    color: #FFFFFF;
+    display: flex;
+    margin-bottom: 2%;
+}
+
+/*Фильтр стоимости*/
+#main-page-filters-filter__cost__min, #main-page-filters-filter__cost__max {
+    height: calc(var(--index) * 0.7);
+    width: calc(var(--index) * 3);
+    color: #939393;
+    font-size: calc(var(--index) * 0.5);
+    font-family: Montserrat-Medium, serif;
+    border: solid #939393 1px;
+    padding-left: 7px;
+    background: transparent;
+}
+
+#main-page-filters-filter__cost__min:hover, #main-page-filters-filter__cost__max:hover {
+    cursor: pointer;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.main-page-filters-filter__age button {
+    color: #939393;
+    font-size: calc(var(--index) * 0.5);
+    font-family: Montserrat-Medium, serif;
+    height: calc(var(--index) * 0.85);
+    width: calc(var(--index) * 1.3);
+    text-align: center;
+    border: solid #939393 1px;
+    padding-left: 7px;
+    background: transparent;
+}
+
+.main-page-filters-filter__age button:hover {
+    cursor: pointer;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+/*Фильтр категории*/
+.main-page-filters-filter__category button, .main-page-filters-filter__creator button {
+    color: #939393;
+    font-size: calc(var(--index) * 0.5);
+    font-family: Montserrat-Medium, serif;
+    height: calc(var(--index) * 0.85);
+    width: calc(var(--index) * 6.7);
+    text-align: center;
+    border: solid #939393 1px;
+    padding-left: 7px;
+    background: transparent;
+}
+
+.main-page-filters-filter__category button:hover, .main-page-filters-filter__creator button:hover {
+    cursor: pointer;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+#main-page-filters-filter__category__modal, #main-page-filters-filter__developers__modal {
+    position: absolute;
+    background-color: #0c0517;
+    border: 1px solid #ffffff;
+    width: calc(var(--index) * 6.7);
+    z-index: 1;
+    color: #939393;
+    font-size: calc(var(--index) * 0.5);
+    font-family: Montserrat-Medium, serif;
+    display: none;
+}
+
+#main-page-filters-filter__category__modal div, #main-page-filters-filter__developers__modal div {
+    margin: 2px 0 2px 2px;
+}
+
+#main-page-filters-filter__category__modal div:hover, #main-page-filters-filter__developers__modal div:hover {
+    color: #FFFFFF;
+}
